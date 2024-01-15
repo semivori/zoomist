@@ -92,6 +92,7 @@ const et = (n) => document.contains(H(n)), bt = (n) => {
   minScale: 1,
   // set initial scale of zoomist-image
   initScale: null,
+  // return `false` if mousedown event does not lead to dragging
   dragFilter: (n) => n.button === 0
 }, ne = {
   // the css selector string or a element of the slider
