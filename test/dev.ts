@@ -1,6 +1,7 @@
 import './../src/zoomist.scss'
 
-import Zoomist from './../src/zoomist.js'
+import Zoomist from './../dist/zoomist.js'
+//import Zoomist from './../src/zoomist.js'
 import {ZoomistOptions} from '../dist/types'
 
 const options: ZoomistOptions = {
