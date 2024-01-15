@@ -4,7 +4,7 @@
   "description": "A TypeScript library for zooming any element. Also supports mobile devices.",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5174",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },

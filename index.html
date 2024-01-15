@@ -44,14 +44,45 @@
         background-color: #eee;
       }
     </style>
+
+    <style>
+      .filter-zoomist {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .filter-btn {
+        position: absolute;
+        top: calc(50% - 65px);
+        left: calc(50% - 50px);
+        height: 130px;
+        width: 100px;
+        background-color: teal;
+        color: white;
+        cursor: not-allowed;
+      }
+
+      .filter-zoomist .zoomist-image {
+        pointer-events: all!important;
+      }
+
+      .filter-zoomist .zoomist-image img {
+        pointer-events: none!important;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
+
       <!-- ZOOMIST -->
-      <div class="cat-zoomist zoomist-container">
+      <div class="filter-zoomist zoomist-container">
         <div class="zoomist-wrapper">
           <div class="zoomist-image">
             <img src="./test/images/cat.jpg" alt="cat" />
+            <a href="#" class="filter-btn">
+              Dragging will be ignored here
+            </a>
           </div>
         </div>
       </div>
@@ -67,7 +98,7 @@
       <!-- <div class="zoomist-custom-slider"></div> -->
     </div>
 
-    <script type="module" src="./test/main.ts"></script>
+    <script type="module" src="./test/dev.ts"></script>
     <!-- <script>
       const changeImageBtn = document.querySelector('.change-image-btn')
 
